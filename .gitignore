@@ -11,3 +11,4 @@ wheels/
 .venv/
 .env
 data/
+.ipynb_checkpoints/
