@@ -1,4 +1,3 @@
-````md
 # Building a clean battery-materials dataset from the Materials Project  
 ### …and why I kept the “bad” entries
 
