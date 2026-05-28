@@ -1,9 +1,9 @@
-# Battery Cathode Voltage Prediction — Composition, Structure, and Honest Uncertainty
+# Battery Cathode Voltage Prediction: Composition, Structure, and Honest Uncertainty
 
 [![CI](https://github.com/ameeya-bhusan/materials-ml-project/actions/workflows/ci.yml/badge.svg)](https://github.com/ameeya-bhusan/materials-ml-project/actions/workflows/ci.yml)
 
 An end-to-end machine-learning pipeline that predicts the **average insertion voltage**
-of lithium-ion battery cathodes from Materials Project data — built to demonstrate
+of lithium-ion battery cathodes from Materials Project data, built to demonstrate
 applied data-science work where **evaluation rigor matters more than headline scores**.
 
 The project moves from raw API data to a deployed screening demo, and at every stage
@@ -14,10 +14,10 @@ rather than assumed.
 ## Headline findings
 
 - **Composition alone predicts voltage surprisingly well.** A gradient-boosting model on
-  Magpie composition descriptors reaches ~0.52 V MAE under chemistry-grouped evaluation —
+  Magpie composition descriptors reaches ~0.52 V MAE under chemistry-grouped evaluation,
   composition captures most of the predictable signal.
 - **Crystal structure helps, but modestly.** A CGCNN graph neural network improves on the
-  composition baseline by ~3% MAE on identical, honest evaluation — a real but small gain
+  composition baseline by ~3% MAE on identical, honest evaluation, a real but small gain
   that only became clear after correcting three layers of evaluation optimism.
 - **Ensemble uncertainty was uninformative — and I proved it.** Deep-ensemble disagreement
   did not correlate with prediction error (Spearman 0.007). Conformal prediction still
@@ -43,7 +43,7 @@ rather than assumed.
 1. [Building a clean battery-materials dataset](blog/01-building-the-dataset.md) — and why I kept the "bad" entries
 2. [How well can composition alone predict voltage?](blog/02-composition-baseline.md) — and how I almost fooled myself with the wrong split
 3. [Does crystal structure actually help?](blog/03-cgcnn-structure-model.md) — three corrections that shrank a 19% improvement to a real 3%
-4. [Honest uncertainty and why active learning backfired](blog/04-uncertainty-and-active-learning.md)
+4. [Honest uncertainty and why active learning backfired](blog/04-uncertainty-and-active-learning.md) — and why active learning backfired
 
 ## Reproduce
 
